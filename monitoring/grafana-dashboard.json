@@ -1,0 +1,27 @@
+{
+  "dashboard": {
+    "title": "Student Task Manager",
+    "panels": [
+      {
+        "title": "HTTP Requests Total",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "student_task_http_requests_total",
+            "legendFormat": "{{method}} {{route}}"
+          }
+        ]
+      },
+      {
+        "title": "HTTP Request Rate",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(student_task_http_requests_total[1m])",
+            "legendFormat": "{{method}} {{route}}"
+          }
+        ]
+      }
+    ]
+  }
+}
