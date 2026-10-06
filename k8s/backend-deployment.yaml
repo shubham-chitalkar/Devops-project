@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: YOUR_DOCKERHUB_USERNAME/student-task-backend:latest
+          image: shubham336/student-task-backend:latest
           ports:
             - containerPort: 5000
           resources:

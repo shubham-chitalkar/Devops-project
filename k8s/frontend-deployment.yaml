@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: YOUR_DOCKERHUB_USERNAME/student-task-frontend:latest
+          image: shubham336/student-task-frontend:latest
           ports:
             - containerPort: 80
