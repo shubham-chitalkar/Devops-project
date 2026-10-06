@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USERNAME = 'YOUR_DOCKERHUB_USERNAME'
+        DOCKERHUB_USERNAME = 'shubham336'
         BACKEND_IMAGE = "${DOCKERHUB_USERNAME}/student-task-backend"
         FRONTEND_IMAGE = "${DOCKERHUB_USERNAME}/student-task-frontend"
     }
